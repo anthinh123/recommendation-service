@@ -4,3 +4,9 @@ server:
 spring:
   application:
     name: recommendation_service
+
+  kafka:
+    bootstrap-servers: localhost:9094
+    consumer:
+      group-id: book-group-id
+      auto-offset-reset: earliest
